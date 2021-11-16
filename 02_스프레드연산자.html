@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //스프레드 연산자
+        const arr = ['dog' , ' cat' , 'rabbit'];
+        const arr1 = arr.concat();
+        console.log(arr1);
+
+        //... 점세개 copy의 개념
+        const arr2 = [...arr];
+        console.log(arr2);
+
+        const arr3 = arr.concat('호랑이' , '소' , '말');
+        console.log(arr3);
+
+        const arr4 = [...arr,'야야' , '미미' , '에에'];
+        console.log(arr4);
+
+        //갱신
+        //스프레드 연산자는 데이터를 추가 할수도 있지만 수정도 할수있다.
+        const dog = {name: '치와와' , age : 3 , addr : '서울'};
+        const dog1 = {
+            ...dog,
+            name: '푸들',
+            age : 10
+        };
+        console.log(dog1);
+
+        console.log('-------------------------');
+
+        const data = [
+            {id : 1 , name : '이익순' , age : 50},
+            {id : 2 , name : '오오' , age : 50},
+            {id : 3 , name : '이순' , age : 50},
+            {id : 4 , name : '박순' , age : 50},
+            {id : 5 , name : '자익순' , age : 50},
+            {id : 6 , name : '이익순' , age : 50}
+        ]
+
+        const data1 = data.map( (item , index) => {
+            if(item.id === 3){
+                //수정
+                return {
+                    ...item,
+                    name : '홍길동',
+                    age: 22
+                }
+            }else {
+                //리턴
+                return item;
+            }
+        } )
+        console.log(data1);
+
+        const data2 = data.map((item , index) => item.id ===1 ? 
+                                {...item , name : '강호동'}:item);
+        console.log(data2);
+
+        const data3 = [
+            ...data , 
+            {
+                id : 9,
+                name : 'ddd', 
+                age : 2
+            }
+        ]
+        console.log(data3);
+
+    </script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
