@@ -13,40 +13,26 @@
 
     <div id="root"> 화면에 보이는 영역</div>
     <script type="text/babel">
-        
-        const title = '신상명세서'
-        const name = '홍길동'
-        const age = 20
-        const addr = '서울'
-        const tel = '010-8888-8588'
-
-        const el = (
-            <div>
-                <h2>제목 : {title} </h2>    
-                <ul>
-                    <li>이름 : {name} </li>
-                    <li>나이 : {age} </li>
-                    <li>주소 : {addr} </li>    
-                    <li>전화 : {tel} </li>
-                </ul>
-            </div>
-        )
-
-        const dom = document.querySelector('#root');
-        ReactDOM.render(el,dom);
-
-        //el 이라는 태그를 dom 에 끼워넣는다.
-        
-        //바벨 : 순수하게 자바스크립트로 변환해주는 역활...?
-        //우리는 우리가 알아볼수 있는 유형으로 적는다. 바벨이 브라우저가 알아볼수 있게 변환해준다.
-
+  
         /*
-        # 웹팩
-        모듈 번들러(Module Bundler)
-        모듈 번들러란 여러개의 나누어져 있는 파일들을 하나의 파일로 만들어주는 라이브러리
-        코딩할 때 편의를 위해 여러 개의 모듈로 나눠서 작업
-        리액트에서 웹팩을 디폴트로 제공 ( 모듈처럼 나눠서 작업할수있게 )
-            => 리액트에 해당하는 프로젝트를 설치를 하면  
+        
+        1. nodejs 다운
+        2. npx react-create-app 프로젝트명
+        3. cd 프로젝트명
+        4. npm start
+        =>3000번 포트로 react 서버 온
+
+        Reactjs code snippets ->vs code 확장 프로그램
+        rsc 입력 후 엔터 react 기본 구조 나옴
+        
+
+        컨트롤 + 슬러쉬  = 주석
+        JSX영역 주석
+
+        노드_모듈스 는 무거움으로, 빼고 업로드
+        노드모듈스가 없는 프로젝트는 
+        npm install 해주면 node modulse 설치됨
+        
         */
 
     </script>

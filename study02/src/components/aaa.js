@@ -5,8 +5,6 @@ import React from 'react';
 //js 파일은 컴포넌트라고 한다.
 //컴포넌트명 반드시 첫글자가 대문자여야한다.
 
-
-
 const Aaa = () => {
     //함수 영역
     return (
