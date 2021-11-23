@@ -4,7 +4,7 @@
 ### 리액트 프로젝트 만들기
 ```
 1. nodejs 다운
-2. npx react-create-app 프로젝트명
+2. npx create-react-app 프로젝트명
 3. cd 프로젝트명
 4. npm start
 =>3000번 포트로 react 서버 온
